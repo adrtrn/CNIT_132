@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<html>
+<header>
+<title> Exercise 4a </title>
+
+<script type="text/javascript">
+/* <![CDATA[ */       
+
+//Note that a form element must
+//always include the action attribte for XHTML validation, 
+//but should not have it for HTML5 validation.
+
+function calc()
+{
+//one way to get value from input field is by using getElementById . value
+var one = parseFloat(document.getElementById("one").value);
+//another way is to get it via form name . input text name . value 
+var two = parseFloat(document.myForm.p2.value);
+
+var avg = (one*two)/(one+two);
+
+//return outcome 
+document.getElementById("sumId").value = avg;
+//or
+document.myForm.sum.value = avg;
+
+}
+
+/*]]>*/ 
+
+
+</script>
+
+</header>
+
+<body>
+
+<div align="center">
+
+<form name="myForm">
+Person 1: 
+<input type="text" id="one" name="p1" value="" /> <br />
+Person 2: 
+<input type="text" name="p2" value="" /> <br />
+
+<input type="button"  value="Submit" onclick="calc();" />
+<input type="reset"  value="Clear" /> <br />
+
+Hours: 
+<input type="text" id="sumId" value="" /> <br />
+Hours: 
+<input type="text" name="sum" value="" />
+
+</form>
+
+</div>
+
+</body>
+
+</html>

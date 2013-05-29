@@ -1,0 +1,579 @@
+***************************************************
+HTML Basics
+
+1. HTML pages are stored as ASCII (text-only) files on a web server? TRUE
+
+2. HTML stands for: Hypertext Markup Language 
+
+3. If you try to display a webpage and receive the following message, where LOGIN is your hills login:
+
+   Forbidden
+   You don't have permission to access /~LOGIN/index.html on this server.
+
+   This means:  index.html does not have proper unix read permission
+
+
+4. The name of your homepage file should be: index.html
+
+5. The title tags should be placed within the:
+   head tags
+
+6. What will the following code display on the hills server, assuming that abc.gif is in the public_html 
+   directory and has proper unix read permission?
+
+   <img src="c:\webfiles\abc.gif">
+
+   answer: nothing
+
+7. What will the following display?
+
+   <p>Here is     some space in the code.</p>
+
+
+   answer:  Here is some space in the code.
+
+8. Which one of the following filenames is acceptable: hw1.htm
+   THESE ARE NOT: hw 1.html, 23.html, my-hw.html
+
+
+9. Which one of the following is best for displaying a paragraph of text?
+   <p>Here is a paragraph of text.</p>
+
+
+10. Which one of the follwing is correct in order to display a blue background for a webpage? 
+    <body bgcolor="blue"> 
+
+
+11. Which one of the following is an absolute URL?  http://www.yahoo.com/ 
+
+
+12. For good readabilty on a webpage, use good color contrast. This means:
+
+     Make your text, link, and vlink a light color if you have a dark background, and make your text, 
+     link and vlink a dark color if you have a light background.
+
+13. An unordered list should start with the tag:
+    <ul>
+
+14. Which one of the following is correct? 
+    <img src="eliz.gif" width="344" height="281" title="Elizabeth Schulz" /> 
+
+
+15. Which one of the following is correct coding for a comment in an HTML document?
+    <!-- Here is a comment --> 
+  
+
+16. Which one of the following links is incorrect?
+     <a href="http://www.whitehouse.gov/>White House</a>  	 missing a quote after gov/
+
+
+****************************************************
+TABLES
+
+1. A table that has 5 rows and 3 columns should have how many <tr> tags? 5
+
+2. A table that has 5 rows and 7 columns should have how many <td> tags?
+   it depends on the colspan or rowspan value
+
+3. A table with a fixed width of 150 pixels would be coded as:
+   <table width="150">
+
+4. A table with a variable width that extends half the screen would be coded as:
+   <table width="50%">
+
+5. In a table, what defines the amount of space from the border of each 
+   cell to the border of the next cell?
+   cellspacing
+
+6. In a table, what should you use to place the contents of a single cell on the 
+   right side of the cell?
+   <td align="right">
+
+7. Which table attribute produces space between each cell content and its cell border?
+   cellpadding
+
+****************************************************
+CSS I
+
+Note: word-wrap: break-word;
+
+1. For an embedded style sheet, which one of the following would be used so that 
+   the background remains fixed, if a viewer scrolls the page. 
+    
+   background-attachment: fixed;
+
+
+2. Given a css declaration of 
+   #banana { color:yellow; }
+   Which one of the following is correct, in association with the above:  
+  
+   answer: <p id="banana">This is the banana paragraph.</p>
+
+
+3. In a css definition, what is used for multiple line comment syntax?
+    /* This is a multiple line comment,
+       with multiple lines in it. */ 
+
+
+4. In a style sheet, to suppress a link from being underlined, we would use:
+   text-decoration: none; 
+
+
+5. In an embedded style sheet, if we define a paragraph as p.left within the <style> tags, 
+   then in the body, our reference to it would be: 
+   <p class="left">
+
+6. In an embedded style sheet, to use center alignment of text in a paragraph, we would use:
+    text-align: center; 
+
+7. The <span> tag is normally used with:
+    inline styles
+
+   <span style="font-size:36pt; color:#660066; font-family:'Arial', 'Helvetica', sans-serif;">
+   <p style="font-size:36pt;">Here is some more text.</p>
+
+
+8. Which one of the following in-line styles is correct?
+   <div style="font-size: 12px;"> 
+
+
+9. Which one of the following style elements is correct for changing the background color of a 
+   link to yellow when the user runs the mouse over it?
+   a:hover {background-color: yellow;} 
+
+10. Which one of the following would be correct for a linked style sheet? 
+    <link rel="stylesheet" href="linksty.css" type="text/css" />
+
+
+****************************************************
+
+GRAPHICS
+
+1. A GIF is created from an image that has been reduced to how many colors or less? 256
+
+2. A thumbnail image file should be approximately what pixel size? 100-125 px
+
+3. An example of defining an imagemap containing a circle as a shape could be <AREA SHAPE=“CIRCLE” COORDS=“122,24,88” HREF=“xyz.htm” />
+88 signifies the: length of the radius of the circle 
+
+4. An example of defining an imagemap containing a rectangle as a shape could be <AREA SHAPE=“RECT” COORDS=“33,2,169,16” HREF=“xyz.htm” />
+2 signifies the: the y coordinate of the upper LEFT hand cornder of the rectangle 
+
+5. Gamma correction is used to make a background: lighter 
+
+6. In order to suppress a colored border around an image that is used as a link, which one of the following is used?
+border="0"
+
+7. In wrapping text around an image so that the text starts at the top of the image, which attribute should you include in the 
+img statement?  align
+
+8. JPEG compression works best with pictures that are photographic in nature, without sharp edges, and: 
+containing LOTS of graduated, continuous tone color
+
+9. The universal resolution for web-delivered graphics is: 72 px per inch
+
+10. Which one of the following is correct for an image link?  <a href="abc.html"><img src="abc.gif" /></a>
+
+11. Which one of the following is correct?
+<img src="eliz.gif" width="344" height="281" title="Elizabeth Schulz" />
+
+12. Which one of the following is not a web safe color?
+NOTE SAFE:
+#33AA99
+
+WEBSAFE: 
+3399cc
+666FF
+9900FF
+
+*************************************
+
+MULTIMEDIA 
+
+1. Which one of the following is a syntactically correct java applet file?
+ puzzle.class 
+
+2. Given: <embed src="abc.qt" height="140" width="160" autostart="true" loop="false" controller="true" />
+autostart="true" means that:
+the embedded video will start playing automatically AFTER the page fully loads.
+
+3.Given: <embed src="beethoven.mid" autostart="false" loop="false" width="20%" height="20" hidden="false" />
+width="20%" signifies that:
+the embedded controller's width will occupy 20% of the user's screen.
+
+4. Quicktime video file have a filetype of .qt or ?
+.mov
+
+5. The animation process in Animation Shop or Animation Wizard involves concatenating individual gif files, 
+which can be thought of as slides of the animation.
+true
+
+6. Which type of audio file is compressed down from a huge file to a much smaller file without little 
+noticeable decrease in sound quality than an audio cd?
+. mp3
+
+7. Which type of audio file is similar in sound to an electronic synthesizer?
+.midi
+
+**************************************
+
+CSS P
+
+1. CSS-P can be used with inline style. TRUE
+
+2. In order to make a colored box, which one of the following is correct?
+b. #colorbox {
+position:absolute;
+left:100px;
+top:30px;
+width:200px;
+height:200px;
+background-color:#CC99CC;
+border:solid 1px #CC99CC;
+}  
+
+3. The lower the z-index value, the farther in front an element becomes. FALSE
+
+
+4. Which one of the following is correct?
+b. #fred {
+position:absolute;
+left:100px;
+top:30px;
+}  
+
+
+5. Which type of HTML tag should normally be positioned? the DIV tag
+
+
+**************************************
+
+FORM
+
+1. Checkboxes and what else may be pre-checked by using the CHECKED attribute? 
+    radio buttons
+
+2. For the OPTION tag, you must create one Select tag for every desired option in the pulldown menu. 
+   false
+
+3. In a form, a set of radio buttons should allow the viewer to submit more than one button for the final submittal.
+    false 
+
+4. In a form, for an input type="text", what attribute is used that gives the maximum length of input
+   allowed in the text box?
+   maxlength 
+
+5. In a form, what input type would be normally used to display a user's name?
+   text 
+
+6. In a form, what tag is used to allow for fairly long comments in columns and rows?
+   textarea 
+
+7. In order to better align radio button items and checkbox items, you should use a:
+   table
+
+8. Which form action sends an email to the user upon submittal of the form?
+   mailto
+
+9. Which one of the following input types is invalid?
+   link
+
+10. Which one of the following would be used with a form action of mailto so that the email 
+   sent is formatted with name/value pairs on different lines?
+
+   enctype="text/plain"
+
+**************************************
+CGI PHP Scripts
+
+1. A perl script should be uploaded to the server in binary mode. FALSE
+
+2. A perl script would display from a form, the fieldname of 'email' as follows:
+   $in{'email'}
+
+3. A PHP script should begin with: <?php
+
+4. If a perl script contains control-M's at the end of a line, an easy fix is to
+   replace the first line with:
+   
+   #!/usr/local/bin/perl --
+
+
+5. In perl \n signifies:
+   
+   carriage return, new line 
+
+6. PHP is a client-side scripting language. false -> PHP is a server-side scripting language.
+
+7. Which one of the following is a valid mail() function in PHP?
+   mail($to, $subject, $msg, $mailheaders); 
+
+8. Which one of the following is correct for processing a form at CCSF?
+   <form action="/cgi-bin/cgiwrap/srubin/form.pl" method="post">
+  
+
+**************************************
+JAVASCRIPT 
+
+1. A pop-up window is NOT the same as a prompt/alert dialog. True
+
+2. Given the following javascript for displaying a message box:
+
+function MsgBox (textstring) { 
+alert (textstring) }
+.
+.
+<form>
+<input name="_____" type= "text" />
+<input name="submit" type="button" value="Enter your sign"
+onClick="MsgBox(form.text1.value)" />
+</form> 
+
+Fill in the above blank:text1
+
+3. Given the JavaScript code:
+
+var sign = prompt("What is your sign?", "");
+
+What is wrong with this? Nothing
+
+4. Given the Javascript code
+
+if (a = b)
+document.write("a equals b");
+else
+document.write("a not equal to b");
+
+What is wrong with this code? (a == b)
+
+5. Given the JavaScript statement: 
+
+alert(Hi there);
+
+What is the error in this code? Missing " "
+
+
+6. For a form field validation, what is the purpose of return false in:
+
+ if (name1 == "" || name1 == null)
+ {
+ alert (msg);
+ return false;
+ } 
+
+Form will NOT be submitted.
+
+7. JavaScript is a client-side scripting language. TRUE
+
+ 
+8. Which one of the following event handlers is invalid in JavaScript? onhover
+
+*************************************
+SELF TEST 1
+
+1. A filed named xyz.wmv is what type of file? wmv is a video file 
+
+2. A perl program would display from a form, the fieldname of 'status' as follows: $in{'status'} 
+
+3. A table that has 7 rows and 5 columns should have how many <tr> tags? 7
+
+4. A type of audio file that is similar in quality to an audio cd is: mp3
+
+5. An example of defining an imagemap containing a circle as a shape could be <area shape="circle" 
+   coords="122,24,88" href="xyz.htm" /> 24 signifies the: 
+   the y coordinate of the center of the circle
+
+6. An example of defining an imagemap containing a rectangle as a shape could be <area shape="rect" 
+   coords="33,2,169,16" href="xyz.htm" /> 169 signifies the:
+   the x coordinate of the lower right hand corner of the rectangle 
+ 
+7. Find the correct img src statement: <img src="xyz.gif">
+
+
+8. In a form, a set of checkboxes should allow the viewer to click more than one box for the final submittal.
+   TRUE
+
+9. In a form, for an input type="text", what attribute is used that gives the size of the input box that is 
+   displayed?
+   SIZE
+
+10. In XHTML, in a form, what input type would be normally used to display an email address?  
+    TEXT
+
+11. In a style sheet, if we define a paragraph as p.le within the <style> tags, then in the body, our 
+    reference to it would be: 
+    <p class="le">
+
+12. In a table, what defines the amount of space from the border of each cell to the border of the next cell?
+    cellspacing
+
+13. In a table, what should you use to place some content on the bottom of a cell? 
+    <td valign="bottom">
+
+14. In an embedded style sheet, to use right alignment of text in a paragraph, we would use:
+    text-align: right;
+
+
+15.In order to display a colored border around an image that is used as a link, which one of 
+   the following is used?
+   >NONE OF THESE WORK: border="yes", border="0", alt="0"
+
+16. To cause text to appear as a font of type 'garamond', you should use:
+    <font face="garamond">
+
+17. What attribute allows the user to see text appear over an image, when their mouse points over it?
+    title
+  
+18. What should be used to position some text 20 pixels from the left of a page?
+    <div style="position: absolute; left: 20px;"> 
+
+19. Which one of the following is a relative link?
+    <a href="resume.html">Resume</a> 
+
+20. Which one of the following is valid ?
+    <script type="text/javascript">
+
+21. Which one of the following is correct for using a php script in association with a form?  
+    <form action="formA.php" method="Post">
+
+22. Which one of the following is correct?
+    <form action="form.pl" method="post"> 
+
+23. Which one of the following is correctly associated with javascript?
+    onmouseout  NOTE: NOT onmouseclick!
+  
+24. Which one of the following is invalid when defining the coordinates of an imagemap?
+    triangle 
+
+25. Which one of the following is well-formed, that is, syntactically and symmetrically correct?
+    <i><b>  info  </b></i>
+
+
+26. Which one of the following would be correct for a linked style sheet?
+    <link rel="stylesheet"  href="vCSS.css" type="text/css" />
+
+27. Which php statement closes a php block?
+    ?>
+
+
+******************************************************
+Practice Exam 2
+
+1. The web server you are working with runs the Unix Operating System and you were told to upload all 
+   your files and directories to the public_html directory that was created for your account. So, you 
+   save your index.html page in the public_html directory and you save resume.html in a directory named 
+   pages that you created inside the public_html directory. When coding in resume.html, a link from the 
+   resume.html page back to index.html page, the correct code would be:
+
+   <a href="../index.html">Home</a>
+
+2. Which HTML attribute provides alternative information for an image if a user 
+   for some reason cannot view it (because of slow connection, an error in the src attribute,
+   or if the user uses a screen reader)?
+    
+   alt
+
+3. For a java applet, which one of the following tags or attributes is invalid?
+   heigth   NOTE: Following are valid: param, name, value
+
+
+4. If you have a perl script that is executed within a form webpage and you submit the form. Which of the following 
+   is usually NOT the problem if you receive the error message:
+
+   CGIWrap Error: Script Execution Failed
+   CGIWrap encountered an error while attempting to execute this script:
+   Error Message: Exec format error Error Number: 8  
+   
+   the perl script is not in cgi-bin directory
+
+   SO IT COULD BE:
+    line 1 of the perl script is blank 
+    script was uploaded in binary mode
+    the perl script contains unseen characters 
+
+5. 
+
+<html>
+<head>
+<title>style test</title>
+<style type="text/css">
+
+p.red {color: red; font-weight:italic;}
+h1, h2 {color: green; font-style:bold;}
+a {link-decoration: none;}
+
+</style>
+</head>
+<body>
+
+<h1>The main title</h1>
+<p class="red">This is the first paragraph of my web page</p>
+<h2>Second section of the page</h2>
+<p id="red">Here is the link to <a href="http://www.google.com">Google
+Website</a></p>
+
+</body>
+</html>
+
+answer: The h1 and h2 lines will be green and bold-faced 
+
+
+6. Which one of the following statements in HTML5 would be used 
+   for displaying an audio and utilizing controls on the page?
+   <audio controls="controls">
+
+
+7. On an inline style sheet, the following code would be syntactically correct.
+
+  <p>Here is <span style="font-size:24pt: color:#FF0000:">some text</span></p>   FALSE
+
+
+8. Which one of the following would be correctly used for an external javascript file, named ext.js?
+
+   <script type="text/javascript" src="ext.js"></script> 
+
+
+9. Which one of the following is syntactically correct in HTML5?
+
+   <BR>
+
+
+10. Which one of the following statements is true?
+    
+     PHP stands for Hypertext Preprocessor, and it is a server-side scripting language.
+
+
+11. Suppose you have a php file called formA.php and it resides in your php directory that
+    is inside your public_html directory. Assume also that the form statement in hw8b.html 
+    that refers to formA.php is
+
+    <form action="../formA.php" method="post">
+ 
+    Which of the following URLs is most likely to be correct for your hw8b web page?
+
+ ttp://hills.ccsf.edu/~USERID/cnit132/hw8b.html
+
+
+12. Some new tags were introduced in HTML5 such as <header>, <footer>, <nav>.
+    Which one pair of the following HTML5 tags would be used to contain the bulk of 
+    the body's content for the page? 
+
+    <section> and </section>
+
+13. Given the javascript:
+
+if (password =< pass1)
+alert("Password Correct");
+
+=< signifies?
+
+=< is invalid and will cause a syntax error 
+
+
+14. The following code is syntactically correct for a form textarea. (True/False)
+
+    <textarea name="comments" cols="40" rows="5"</textarea>
+
+    FALSE
+
+   <textarea name="comments" cols="40" rows="5"> </textarea>   //correct

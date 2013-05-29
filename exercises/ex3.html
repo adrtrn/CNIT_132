@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<html>
+<header>
+<title> Exercise 3 </title>
+
+
+<script type="text/javascript">
+/* <![CDATA[ */       
+
+var global; 
+
+function calculate()
+{
+	var n1 = parseInt(document.in.box1.value);
+	var n2 = parseInt(document.in.box2.value);
+	alert("Numbers entered: \n" + n1 +
+	                       "\n" + n2);
+						   
+	if(n1 == n2)
+		alert("Numbers are equal");
+	else if(n1 > n2)
+	    alert(n1 + " is greater than " + n2);
+    else
+        alert(n2 + " is greater than " + n1);
+	
+	global = n1+n2;
+    //document. name of form . attribute name value . set value
+	document.out.output.value = global;
+}
+
+
+/*]]>*/ 
+
+
+</script>
+
+</header>
+
+<body>
+
+<div align="center">
+
+Enter two numbers into the following boxes.
+
+<form name="in">
+
+Number:  <input type="textbox" name="box1" /> <br />
+Number:  <input type="textbox" name="box2" /> <br />
+
+<input type="button" value="submit" onclick="calculate();" />
+<input type="reset" value="clear"/>
+
+</form>
+
+<form name="out" >
+
+Sum: <input type="text" name="output" value="" />
+
+</form>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<html>
+<header>
+<title> Exercise 1 </title>
+
+
+<script type="text/javascript">
+/* <![CDATA[ */       
+
+function getResults(myForm)
+{
+
+
+   //get numbers
+   var n1 = parseInt(myForm.box1.value);
+   var n2 = parseInt(myForm.box2.value);
+   var n3 = parseInt(myForm.box3.value);
+   var n4 = parseInt(myForm.box4.value);
+	//document.write(n1);
+	//alert("testing");
+   var prompt = "You entered the following numbers: ";
+   alert(prompt + n1 + " " + n2 + " " + n3 + " " + n4);
+
+   prompt = "Following numbers are less than 6: ";
+   var promptBiggerThan = "Following numbers a larger than or equal to 6: ";
+  if(n1 < 6)
+     prompt += n1 + " ";
+  else
+     promptBiggerThan += n1 + " ";
+   if(n2 < 6) 
+     prompt += n2 + " "; 
+   else
+     promptBiggerThan += n2 + " ";
+   if(n3 < 6) 
+     prompt += n3 + " ";
+   else
+     promptBiggerThan += n3 + " ";
+   if(n4 < 6) 
+     prompt += n4 + " "; 
+   else
+     promptBiggerThan += n4 + " ";
+	 
+	 alert(prompt);
+	 alert(promptBiggerThan);
+	 
+	prompt = "Product is: " + (n1*n2*n3*n4);
+	alert(prompt);
+} 
+
+
+/*]]>*/ 
+
+
+</script>
+
+</header>
+
+<body>
+
+
+<form>
+Enter a number 1:
+<input type="textbox" name="box1" value="" /> <br />
+Enter a number 2:
+<input type="textbox" name="box2" value="" /> <br />
+Enter a number 3:
+<input type="textbox" name="box3" value="" /> <br />
+Enter a number 4:
+<input type="textbox" name="box4" value="" /> <br />
+
+<input type="button" value="calculate" onclick="getResults(this.form);" />
+
+</form>
+
+</body>
+
+</html>

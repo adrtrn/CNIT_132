@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- *********************HEAD********************* -->
+<head>
+<meta name="description" content="forms, CNIT 132" />
+<title>Homework#7 - CNIT 132</title>
+
+<link rel="stylesheet"  href="vCSS.css" type="text/css" />
+<!--
+/*Victor Malchikov - vCSS.css */
+
+
+/* body */
+body 
+{
+  background-image:url(../images/simple_background.jpg);
+  background-color: black;
+  text-align:center; /* Hack for IE/Win */ 
+  background-repeat:no-repeat;
+}
+
+#content
+ {
+	width:800px;
+	margin:0px auto;
+	text-align:left;
+	padding:10px;
+	border:0px;
+	background-color:white;
+	
+}
+
+/*fancy divider image */
+.dividerImage
+{
+   background-image:url(../images/break.png);
+   background-repeat:no-repeat;
+   height: 11px;  /*force div tag to open if there is no text*/
+   background-position:center;
+   margin-bottom: 2px; /* adds/removes spaces between elements on page */
+}
+
+/*image control */
+.centeredImage
+{
+  margin-top: 10px;
+}
+
+.bottomImage
+{
+  margin-top: 10px;
+}
+
+.leftImage
+{
+  padding-left: 0px;
+  margin: 10px 10px 0px 0px;  /* top, right, bottom, left */
+  float: left;
+  display:block;
+}
+
+.rightImage
+{
+  padding-left: 0px;
+  margin: 10px 0px 0px 7px;  /* top, right, bottom, left */
+  float: right;
+  display:block;
+}
+
+/* <p> tag */
+p
+{
+  text-align: center;
+  padding: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  word-wrap: break-word; /*use this to have text wrap around */
+}
+
+p.header 
+{
+	text-align:center;
+	font-size:14pt; 
+	font-weight:normal; 
+	font-variant:normal;
+}
+
+
+p.sectionHeader /* use with .dividerImage */
+{
+	text-align:center;
+	font-size:14pt; 
+	font-weight: bold; 
+	font-variant:normal;
+	font-family: Sans-serif;
+	margin-top:0px; /* adds/removes space between elements on the page */
+	margin-bottom: 3px;
+}
+
+/*CSS NOTES:
+Margin is on the outside of block elements while padding is on the inside.
+*/
+-->
+<style type="text/css">
+
+body
+{
+background-image: url(../images/z_city.jpg);
+
+}
+#content
+ {
+	width:800px;
+}
+
+p.name
+{
+text-align: center;
+}
+
+table
+{
+padding-top:0px;
+}
+
+</style>
+
+</head>
+
+<!-- *********************BODY********************* -->
+<body background="../images/z_form.jpg">
+
+<div id="content">
+<h3 align="center"> Welcome to the Walking Dead Feedback Form </h3>
+
+<div align="center">
+<img src="../images/break.png" class="centeredImage" width="318" height="11"
+     alt="separator" title="separator" align="middle" border="0"/>
+</div>
+
+<p style="padding-left:40px; padding-right:40px;"> 
+The following information will be used to create a statistics chart based on provided information. 
+Collected data will be displayed in form of bar graphs. </p> 
+
+<!-- form -->
+<form method="post" action="mailto:vmalchik@mail.ccsf.edu" enctype="text/plain">
+
+<!-- name -->
+<p class="name">Enter your name:
+<input type="text" name="name" value="" size="50" maxlength="50" />
+</p>
+
+<!-- email -->
+<p class="name">Enter your email:
+<input type="text" name="email" value="" size="50"  maxlength="50" />
+</p>
+
+<!-- radio buttons -->
+<div style="padding-bottom:40px;">
+<table border="0" align="center" style="float:right; padding:0px 200px 0px 0px;">
+<tr>
+<td>
+<input type="radio" name="tv_vs_comic" value="tv"/> The Walking Dead - AMC <br />
+<input type="radio" name="tv_vs_comic" value="comic"/> The Walking Dead Comic <br />
+<input type="radio" name="tv_vs_comic" value="nr" /> No Response <br />
+</td>
+</tr>
+</table>
+<p style="padding-left: 119px">Which one did you like more? </p>
+</div>
+
+<!-- check boxes -->
+<div style="padding-bottom:40px;">
+<table border="0" align="center" style="float:right; padding-right: 150px;">
+<tr>
+<td>
+<input type="checkbox" name="checkbox_info" value="tv" /> The Walking Dead - AMC <br />
+<input type="checkbox" name="checkbox_info" value="comic"/> The Walking Dead Comic <br />
+<input type="checkbox" name="checkbox_info" value="game_1" />The Walking Dead - Video Game <br />
+<input type="checkbox" name="checkbox_info" value="game_2" />The Walking Dead: Survival Instinct <br />
+</td>
+</tr>
+</table>
+<p style="padding-left: 119px">Which of the following have you watched/read/played?</p>
+</div>
+
+<!-- select -->
+<div style="padding-bottom:10px;">
+<table border="0" align="center" style="float:right; padding-right: 282px; margin-left: 20px;">
+<tr>
+<td>
+<select name="other_games" size="1">
+<!-- note: if no text appears before openning and closing tag then value is used -->
+<option selected="selected" value="game_0">None</option>
+<option value="game_1">DayZ</option> 
+<option value="game_2">Left 4 Dead</option>
+<option value="game_3">Left 4 Dead 2</option>
+<option value="game_4">Dead Island</option>
+</select>
+</td>
+</tr>
+</table>
+<p style="padding-left: 140px;">Select one of the following that you enjoyed the most: </p>
+</div>
+
+<!-- textbox -->
+<p>If you have any questions or comments please provide them below: <br />
+<textarea name="user_comments" rows="4" cols="49" ></textarea>
+</p>                                              
+
+<div align="center" style="padding-right: 10px;">
+<!-- submit -->
+<input type="submit" value="Submit"/>
+<!-- rest -->
+<input type="reset" value="Clear" />
+</div>
+
+<div align="center" style="padding-bottom: 6px;">
+<img src="../images/break.png" class="centeredImage" width="318" height="11" 
+     alt="separator" title="separator" align="middle" border="0"/>
+</div>
+
+</form> <!-- close form -->
+
+<!-- back button -->
+	<a href="homework_page.html">
+		<img src="http://www.techadvisory.org/wp-content/uploads/2010/11/back-button.jpg" style="float: left; padding-top: 8px; padding-right:0px"
+		     width="50" height="50" alt="back to homework page" title="back to homework page" border="0"/>
+	</a> 
+
+<!-- validation -->
+
+<p style="text-align:center; padding-right: 26px;">
+			 
+ <a href="http://validator.w3.org/check?uri=referer"><img
+        src="http://www.w3.org/Icons/valid-xhtml10" border="0"
+        alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
+			 
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+
+
+</div>
+</body>
+</html>

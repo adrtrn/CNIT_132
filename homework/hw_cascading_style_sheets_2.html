@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- *********************HEAD********************* -->
+<head>
+<meta name="description" content="CSS, Cascading Style Sheets, CNIT 132" />
+<title>Homework#6 - CNIT 132</title>
+
+<!-- CSS File: vCSS2.css -->
+<link rel="stylesheet"  href="vCSS2.css" type="text/css" />
+
+<!-- here is the file info 
+
+
+body 
+{
+  background-color: white;
+  text-align:center; 
+  background-repeat: repeat-y;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+
+table
+{
+	width: 400px;
+	border: #996699;
+	border-collapse:collapse;
+}
+
+td.title_pad
+{
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+
+td.content_pad
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+ul.pad
+{
+	text-align: left;
+	padding-right: 60px;
+	padding-left: 90px;
+
+}
+
+a:hover 
+{ 
+	color:#8f0052;
+	text-decoration: underline;
+	background-color: #CC9900;
+}
+
+#title-banner 
+{
+	position: absolute;
+	z-index: 10;
+	top: 25px;
+	left: 350px;
+	font-family: Lucida Calligraphy, "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 25px;
+	text-shadow: 2px 2px #808080; 
+
+}
+
+
+#autumn1_Parent
+{
+	z-index: -20;
+ 	position: absolute;
+	top: 0px;
+	left: 84px;
+}
+
+
+#autumn2_Parent
+{
+ 	position: absolute;
+	z-index:-10;
+	top: 0px;
+	left: 700px;
+}
+
+#general_info
+{
+	position: absolute;
+	top: 200px;
+	left: 150px;
+	width: 400px;
+	height: 49px;
+	border:solid 1px #996699;
+}
+
+#p1_parent
+{
+    position: absolute;
+	top: 250px;
+	left: 150px;
+	width: 400px;
+	height: 180px;
+	border:solid 1px #996699;
+}
+
+#scholarship_info
+{
+	position: absolute;
+	top: 431px;
+	left: 150px;
+	width: 400px;
+	height: 49px;
+	border:solid 1px #996699;
+
+}
+
+#p2_parent
+{
+
+	position: absolute;
+	top: 481px;
+	left: 150px;
+	width: 400px;
+	height:277px;
+	border:solid 1px #996699;
+}
+
+#p_child_1
+{
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	width: 380px;
+	
+}
+
+#p_child_2
+{
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	width: 380px;
+	
+}
+
+#p_child_3
+{
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	width: 380px;
+	
+}
+
+#scholarship_table_location
+{
+	position: absolute;
+	top: 200px;
+	left: 600px;
+}
+
+#pvt_table_location
+{
+	position: absolute;
+	top: 480px;
+	left: 600px;
+}
+
+#image_top
+{
+	position: absolute;
+	z-index:-20;
+	top: 210px;
+	left: 1030px;
+}
+
+#image_bottom
+{
+	position: absolute;
+	z-index:-30;
+	top: 500px;
+	left: 1030px;
+}
+
+#rounded_pos
+{ 
+	position: absolute;
+	top: 780px;
+	left: 250px;
+}
+
+#validation_pos
+{
+	position: absolute;
+	top: 780px;
+	left: 690px;
+}
+
+.dividerImage
+{
+   background-image:url(../images/break.png);
+   background-repeat:no-repeat;
+   height: 11px; 
+   background-position:center;
+   margin-bottom: 2px; 
+}
+
+.centeredImage
+{
+  margin-top: 10px;
+}
+
+.bottomImage
+{
+  margin-top: 10px;
+}
+
+.leftImage
+{
+  padding-left: 0px;
+  margin: 10px 10px 0px 0px;  
+  float: left;
+  display:block;
+}
+
+.rightImage
+{
+  padding-left: 0px;
+  margin: 10px 0px 0px 7px;
+  float: right;
+  display:block;
+}
+
+p
+{
+  text-align: center;
+  padding: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  word-wrap: break-word;
+}
+
+p.header 
+{
+	text-align:center;
+	font-size:14pt; 
+	font-weight:normal; 
+	font-variant:normal;
+}
+
+
+p.sectionHeader 
+{
+	text-align:center;
+	font-size:14pt; 
+	font-weight: bold; 
+	font-variant:normal;
+	font-family: Sans-serif;
+	margin-top:0px;
+	margin-bottom: 3px;
+}
+
+
+
+-->
+
+</head>
+
+<!-- *********************BODY********************* -->
+<body background="../images/autumn_banner.jpg"> 
+
+<!-- autumn 1 div -->
+<div id="autumn1_Parent"> 
+<img src="../images/autumn_leaves_falling.jpg" width="380" height="200" 
+     alt="image 1 of autumn" title="image 1 of autumn"/> 
+</div>
+
+<!-- Banner: Page Title -->
+<div id="title-banner"> <h3> Scholarship Information Page </h3> </div>
+
+<!-- autumn 2 div -->
+<div id="autumn2_Parent"> 
+<img src="../images/autumn_leaves.jpg" width="500" height="200"
+     alt="image 2 of autumn" title="image 2 of autumn"/> 
+</div>
+
+<!-- general info -->
+<div id="general_info">
+<div id="p_child_1"><p>General Information:</p></div>
+</div>
+
+<!-- para 1 -->
+<div id="p1_parent">
+<div id="p_child_2"> 
+<p>The cost of education is on the rise and this means that more and more students
+   will resort to borrowing money from Federal and Private Loans. It is an unfortunate
+   and sad affair in that students are forced to incur a huge debt before they are able 
+   to benefit from their degree.</p> 
+</div>
+</div>   
+
+<!-- scholarship info -->
+<div id="scholarship_info">
+<div id="p_child"><p>Scholarship Information:</p></div>
+</div>
+
+<!-- para 2 -->
+<div id="p2_parent">
+<div id="p_child_3"> 
+<p>Fortunately there are scholarships. Scholarships can be very helpful when you are trying
+   to obtain a degree for they allow a student to decrease the amount of money they have to
+   borrow to obtain a degree. The catch is that it is not always easy to obtain a scholarship. 
+   Usually a school will provide links to websites that offer scholarships and outline criteria
+   for an application process. It is encouraged to try to obtain a scholarship before resorting 
+   to student loans. </p> 
+</div>
+</div>   
+
+<!-- Scholarship table -->
+<div id="scholarship_table_location">
+<table border="1">
+<tr>
+<td class="title_pad">Scholarship Topics</td>
+</tr>
+<tr>
+<td class="content_pad">
+Here are some useful links to check:
+<ul class="pad">
+<li>You can always find useful information on the <a href="http://en.wikipedia.org/wiki/Scholarship">wiki</a> page.</li>
+<li>You should definitely be aware of possible <a href="http://www.finaid.org/scholarships/scams.phtml">scams</a>.</li>
+<li>Other general questions can have answers on the following 
+   <a href="http://www.scholarships.com/financial-aid/college-scholarships/scholarship-information/scholarship-f-a-q/">
+   faq</a> page.</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+
+<!-- Private loans table -->
+<div id="pvt_table_location">
+<table border="1">
+<tr>
+<td class="title_pad">Private Loan Topics</td>
+</tr>
+<tr>
+<td class="content_pad">
+Here are some useful links to check:
+<ul class="pad">
+<li>You can always find useful information on the <a href="http://en.wikipedia.org/wiki/Private_student_loan_(United_States)">wiki</a> page.</li>
+<li>You should definitely be aware of possible <a href="http://www.consumer.ftc.gov/articles/0160-student-loans">scams</a>.</li>
+<li>Other general questions can have answers on the following 
+   <a href="http://www.usnews.com/education/best-colleges/paying-for-college/student-loan/articles/2010/08/17/private-student-loans-frequently-asked-questions">
+   faq</a> page.</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+
+<!-- overlapping images -->
+<div id="image_top"><img src="../images/autumn_1.jpg" width="170" height="500"
+                         alt="image 1 - on top" title="image 1 - on top"/> </div>
+<div id="image_bottom"><img src="../images/autumn_2.jpg" width="170" height="378"
+                            alt="image 2 - on bottom" title="image 2 - on bottom" /> </div>
+
+<!-- rounded corners -->
+<div id="rounded_pos" style="border: 2px solid #996699; border-radius: 25px; -moz-border-radius:25px;">
+<p>Click <a href="homework_page.html"> here </a> to go back. </p>
+</div>
+
+<!-- validation -->
+<div id="validation_pos">
+<!-- validation -->
+<p style="text-align:center;">
+   <a href="http://validator.w3.org/check?uri=referer"><img
+        src="http://www.w3.org/Icons/valid-xhtml10" border="0"
+        alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
+
+
+
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+</div>
+
+
+
+</body>
+</html>

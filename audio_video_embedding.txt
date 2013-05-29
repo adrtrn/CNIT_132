@@ -1,0 +1,81 @@
+<style type="text/css">
+
+
+/* The following styles are needed for the Video display */
+
+
+/* hides the second object from all versions of IE */
+* html object.mov {
+    display: none;
+}
+
+/* displays the second object in all versions of IE apart from 5 on PC */
+* html object.mov/**/ {
+    display: inline;
+}
+
+/* hides the second object from all versions of IE >= 5.5 */
+* html object.mov {
+    display/**/: none;
+}
+
+
+/* The following styles are needed for the Video display */
+
+
+/* hides the second object from all versions of IE */
+* html object.mov {
+    display: none;
+}
+
+/* displays the second object in all versions of IE apart from 5 on PC */
+* html object.mov/**/ {
+    display: inline;
+}
+
+/* hides the second object from all versions of IE >= 5.5 */
+* html object.mov {
+    display/**/: none;
+}
+
+</style>
+
+
+
+Family Guy - Sound Clip - .wav (30kb)
+<object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B"
+         codebase="http://www.apple.com/qtactivex/qtplugin.cab" width="200" height="16">
+<param name="src" value="ultimatefrisbee.wav" />
+<param name="controller" value="true" />
+<param name="autoplay" value="false" />
+<param name="autostart" value="0" />
+<param name="pluginspage" value="http://www.apple.com/quicktime/download/" />
+<!--[if !IE]> <-->
+<object type="audio/x-mpeg" data="ultimatefrisbee.wav" width="200" height="16">
+<param name="src" value="jultimatefrisbee.wav" />
+<param name="controller" value="true" />
+<param name="autoplay" value="false" />
+<param name="autostart" value="0" />
+<param name="pluginurl" value="http://www.apple.com/quicktime/download/" />
+</object>
+<!--> <![endif]-->
+</object>
+
+
+
+Harlem Shake - Video (348kb)
+<object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" 
+        codebase="http://www.apple.com/qtactivex/qtplugin.cab"        
+ 		width="320" height="188">
+ <param name="src" value="harlem_shake_vid.3gp" />
+ <param name="controller" value="true" />
+ <param name="autostart" value="false" />
+ <!--[if !IE]> <-->
+ <object type="video/quicktime" data="harlem_shake_vid.3gp" 
+         width="320" height="188" class="mov">
+  <param name="controller" value="true" />
+  <param name="autostart" value="false" />
+  Error Occured.
+ </object>
+ <!--> <![endif]-->
+</object>

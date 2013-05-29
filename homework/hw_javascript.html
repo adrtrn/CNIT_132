@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- *********************HEAD********************* -->
+<head>
+<meta name="description" content="JavaScript, CNIT 132" />
+
+<title>Homework#9 - CNIT 132</title>
+
+<!-- CSS href 
+<link rel="stylesheet"  href="vCSS.css" type="text/css" />
+-->
+<!-- CSS style -->
+<style type="text/css">
+
+body
+{
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#content
+ {
+	width:800px;
+	margin:0px auto;
+	padding:10px;
+	border: solid;
+	background-color:white;
+	text-align: center;
+}
+
+div.pad 
+{
+	padding: 15px;
+}
+
+
+</style>
+
+
+<!-- JAVA SCRIPT: click hw9js.js link to view scripts  -->
+<script type="text/javascript" src="hw9js.js"> </script> 
+
+
+<!-- CSS jQuery  -->
+<script type="text/javascript" src="jquery.js"></script>
+
+<!-- Fade Funciton -->
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $("button").click(function(){           //when user clicks button element fade text script will be activated
+     $("#fadeText").fadeTo("slow",0.25);  //note: .25 is an indicator of how much to fade the text to 
+  });
+});
+
+</script>
+
+
+</head>
+
+<!-- *********************BODY********************* -->
+<body onload="loadHeader();" bgcolor="#CCFF99">
+
+<!-- Change bgcolor --> 
+
+<table align="center"> 
+<tr>
+<td bgcolor="#000000"><a href="#" onmouseover="setColor('#000000')"> <img src="cleardot.gif" alt="color" height="10" width="50" border="0" /></a></td>
+<td bgcolor="#5470aa"><a href="#" onmouseover="setColor('#5470aa')"> <img src="cleardot.gif" alt="color" height="10" width="50" border="0" /></a></td>
+<td bgcolor="#fff8b9"><a href="#" onmouseover="setColor('#fff8b9')"> <img src="cleardot.gif" alt="color" height="10" width="50" border="0" /></a></td>
+<td bgcolor="#ccffcc"><a href="#" onmouseover="setColor('#ccffcc')"> <img src="cleardot.gif" alt="color" height="10" width="50" border="0" /></a></td>
+<td bgcolor="#e9967a"><a href="#" onmouseover="setColor('#e9967a')"> <img src="cleardot.gif" alt="color" height="10" width="50" border="0" /></a></td>
+<td bgcolor="#ccffff"><a href="#" onmouseover="setColor('#ccffff')"> <img src="cleardot.gif" alt="color" height="10" width="50" border="0" /></a></td>
+<td bgcolor="#ccccff"><a href="#" onmouseover="setColor('#ccccff')"> <img src="cleardot.gif" alt="color" height="10" width="50" border="0" /></a></td>
+<td bgcolor="#ffff00"><a href="#" onmouseover="setColor('#ffff00')"> <img src="cleardot.gif" alt="color" height="10" width="50" border="0" /></a></td>
+<td bgcolor="#99ff33"><a href="#" onmouseover="setColor('#99ff33')"> <img src="cleardot.gif" alt="color" height="10" width="50" border="0" /></a></td>
+<td bgcolor="#ff0000"><a href="#" onmouseover="setColor('#ff0000')"> <img src="cleardot.gif" alt="color" height="10" width="50" border="0" /></a></td>
+<td bgcolor="#00ffff"><a href="#" onmouseover="setColor('#00ffff')"> <img src="cleardot.gif" alt="color" height="10" width="50" border="0" /></a></td>
+<td bgcolor="#9933ff"><a href="#" onmouseover="setColor('#9933ff')"> <img src="cleardot.gif" alt="color" height="10" width="50" border="0" /></a></td>
+</tr>
+</table>
+
+<!-- Expanding Text  -->
+<div id="content">
+<h3 id="header"> Welcome to JavaScript Homework Page </h3>
+
+<div class="pad" align="center">
+<img src="../images/break.png" width="318" height="11" alt="separator" title="separator" align="middle" border="0"/>
+</div>
+
+<!-- Alert message link --> 
+<a href="#" onclick="alert('Hello! Password for HW7 page is rosebud.')"> Click Me! </a>
+
+<div class="pad" align="center">
+<img src="../images/break.png" width="318" height="11" alt="separator" title="separator" align="middle" border="0"/>
+</div>
+
+<!-- Alert question -->
+<form action="">
+Do you like this page? (y/n) 
+<input id="question_one" name="question" type="text" value="" size="1" />
+<input type="button" onclick="respond(this.form)" value="Submit" />
+</form>
+
+<div class="pad" align="center">
+<img src="../images/break.png" width="318" height="11" alt="separator" title="separator" align="middle" border="0"/>
+</div>
+
+<!-- Image change -->
+<div align="center">
+<img src="../images/angel.png" alt="img swap" name="swap" onmouseover="changeImage();" 
+     width="150" height="213"  title="img swap" id="swap"   onmouseout="resetImage();" />
+</div>
+
+<div class="pad" align="center">
+<img src="../images/break.png" width="318" height="11" alt="separator" title="separator" align="middle" border="0"/>
+</div>
+
+<!-- Drop down menu with 3 links --> 
+Select from the following drop down menu:
+<form action="">
+<select name="links" onchange="loadPage(this.form);">
+<option value="" > Select One </option>
+<option value="https://www.google.com/"> Google </option>
+<option value="http://www.youtube.com/"> YouTube </option>
+<option value="https://www.facebook.com//"> Facebook </option>
+</select>
+</form>
+
+<div class="pad" align="center">
+<img src="../images/break.png" width="318" height="11" alt="separator" title="separator" align="middle" border="0"/>
+</div>
+
+<!-- Warning Message Page -->
+<a href="#" onclick="warningPage();" > This message contains a warning. </a>
+
+<div class="pad" align="center">
+<img src="../images/break.png" width="318" height="11" alt="separator" title="separator" align="middle" border="0"/>
+</div>
+
+<!-- Password Protected Website -->
+<form name="pwForm" id="pwForm" action="">
+Enter correct password to access HW7 page:
+<!-- NOTE: User can either click Submit button or press the Return key -->
+<input type="password" name="ps" id="pw" onkeydown="if(event.keyCode==13) checkPassword(this.form);"/> <br />
+<input type="button" name="ps_button" id="ps_button" value="Submit" onclick="checkPassword(this.form);" />
+<input type="reset" value="Clear" />
+</form>
+
+<div class="pad" align="center">
+<img src="../images/break.png" width="318" height="11" alt="separator" title="separator" align="middle" border="0"/>
+</div>
+
+<!-- Link to hw8a page with required fields --> 
+<a href="hw8a.html" > Link to HW8a form. </a>
+
+<div class="pad" align="center">
+<img src="../images/break.png" width="318" height="11" alt="separator" title="separator" align="middle" border="0"/>
+</div>
+
+<!-- Fade Text  -->
+<p id="fadeText" style="margin-bottom: 4px; margin-top: 5px;">This text will fade.</p> 
+<button type="button" style="margin-top: 0px;"> Click to Fade </button>
+
+<div class="pad" align="center">
+<img src="../images/break.png" width="318" height="11" alt="separator" title="separator" align="middle" border="0"/>
+</div>
+
+<!-- validation -->
+
+<p style="text-align:center;">
+			 
+ <a href="http://validator.w3.org/check?uri=referer"><img
+        src="http://www.w3.org/Icons/valid-xhtml10" border="0"
+        alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
+			 
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+
+<pre> </pre>
+
+</div>
+
+</body>
+</html>

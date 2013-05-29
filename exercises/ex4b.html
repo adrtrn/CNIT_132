@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<html>
+<header>
+<title> Exercise 4a </title>
+
+<script type="text/javascript">
+/* <![CDATA[ */       
+
+function getTable()
+{
+var four = 4;
+var nine = 9;
+var sixteen = 16;
+var twentyfive = 25; 
+
+document.write("<table align=\"center\" border=\"1\">");
+document.write("<tr> <td> Number </td> <td>  SquareRoot of Number </td> </tr>");
+document.write("<tr> <td> " + four + "</td> <td> " + Math.sqrt(four) + "</td> </tr>");
+document.write("<tr> <td> " + nine + "</td> <td> " + Math.sqrt(nine) + "</td> </tr>");
+document.write("<tr> <td> " + sixteen + "</td> <td> " + Math.sqrt(sixteen) + "</td> </tr>");
+document.write("<tr> <td> " + twentyfive + "</td> <td> " + Math.sqrt(twentyfive) + "</td> </tr>");
+document.write("</table>");
+
+var b2 = "<input type=\"button\" value=\"Hide table\" onclick=\"hideTable();\" />";
+document.write(b2);
+document.close();
+}
+
+function hideTable()
+{
+	var b1 = "<input type=\"button\" value=\"Show table\" onclick=\"getTable();\" />";
+	var b2 = "<input type=\"button\" value=\"Hide table\" onclick=\"hideTable();\" />";
+	document.write(b1);
+	document.write(b2);
+	document.close();
+}
+/*]]>*/ 
+
+
+</script>
+
+</header>
+
+<body>
+
+<div align="center">
+
+<form>
+
+<input type="button" name="b1" value="Show Table" onclick="getTable();" />
+<input type="button" name="b2" value="Hide Table" onclick="hideTable();" />
+
+</form>
+</div>
+
+</body>
+
+</html>

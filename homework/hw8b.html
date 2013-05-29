@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- *********************HEAD********************* -->
+<head>
+<meta name="description" content="forms, CNIT 132" />
+<title>Homework#8b - CNIT 132</title>
+
+<link rel="stylesheet"  href="vCSS.css" type="text/css" />
+<!--
+/*Victor Malchikov - vCSS.css */
+
+
+/* body */
+body 
+{
+  background-image:url(../images/simple_background.jpg);
+  background-color: black;
+  text-align:center; /* Hack for IE/Win */ 
+  background-repeat:no-repeat;
+}
+
+#content
+ {
+	width:800px;
+	margin:0px auto;
+	text-align:left;
+	padding:10px;
+	border:0px;
+	background-color:white;
+	
+}
+
+/*fancy divider image */
+.dividerImage
+{
+   background-image:url(../images/break.png);
+   background-repeat:no-repeat;
+   height: 11px;  /*force div tag to open if there is no text*/
+   background-position:center;
+   margin-bottom: 2px; /* adds/removes spaces between elements on page */
+}
+
+/*image control */
+.centeredImage
+{
+  margin-top: 10px;
+}
+
+.bottomImage
+{
+  margin-top: 10px;
+}
+
+.leftImage
+{
+  padding-left: 0px;
+  margin: 10px 10px 0px 0px;  /* top, right, bottom, left */
+  float: left;
+  display:block;
+}
+
+.rightImage
+{
+  padding-left: 0px;
+  margin: 10px 0px 0px 7px;  /* top, right, bottom, left */
+  float: right;
+  display:block;
+}
+
+/* <p> tag */
+p
+{
+  text-align: center;
+  padding: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  word-wrap: break-word; /*use this to have text wrap around */
+}
+
+p.header 
+{
+	text-align:center;
+	font-size:14pt; 
+	font-weight:normal; 
+	font-variant:normal;
+}
+
+
+p.sectionHeader /* use with .dividerImage */
+{
+	text-align:center;
+	font-size:14pt; 
+	font-weight: bold; 
+	font-variant:normal;
+	font-family: Sans-serif;
+	margin-top:0px; /* adds/removes space between elements on the page */
+	margin-bottom: 3px;
+}
+
+/*CSS NOTES:
+Margin is on the outside of block elements while padding is on the inside.
+*/
+-->
+<style type="text/css">
+
+body
+{
+    background-image: url(../images/blue.png);
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#content
+ {
+	padding-top: 5px;
+	margin: 0px auto;
+    width: 800px;
+    height: 100%;
+	box-shadow: 8px 8px 5px #888888; 
+	background-color: #FFFFFF;
+}
+
+table
+{
+	vertical-align:text-top;
+	text-align: left;
+	padding-left: 200px;
+	margin-top: 8px;
+}
+
+
+td
+{
+	margin: 0px;
+}
+
+p
+{
+	margin: 0px 10px 5px 5px;
+}
+
+p.right
+{
+	padding-left: 0px;
+}
+
+buttons
+{
+	margin: auto;
+}
+
+</style>
+
+
+
+</head>
+
+<!-- *********************BODY********************* -->
+<body>
+
+<div id="content">
+
+<!-- header -->
+<div>
+<img src="../images/news_header.png" width="800" height="106" align="middle" alt="header" title="banner" border="0" />
+</div>
+
+<br />
+
+<!-- seperator (below header) -->
+<div align="center" style="padding-bottom: 6px;">
+<img src="../images/break.png" class="centeredImage" width="318" height="11" 
+     alt="separator" title="separator" align="middle" border="0"/>
+</div>
+
+<form action="../formA.php" method="post">
+
+<!-- name and email -->
+<table>
+<tr>
+<td><p class="right"> Name: </p> </td> 
+<td> <input name="name" value="" size="50" /> </td>
+</tr>
+<tr>
+<td><p class="right"> Email:</p> </td>
+<td> <input name="email" value="" size="50" /> </td>
+</tr>
+</table>
+
+<!-- radio buttons : registered -->
+<table>
+<tr>
+<td> <p style="padding-bottom: 40px; padding-right: 55px; "> Registered as a: </p> </td>
+<td> <!-- hidden: this is here in case that user does not select an option -->
+	<input type="hidden" name="party" value="" /> 
+    <input type="radio" name="party" value="Republican" />  Republican <br />
+	<input type="radio" name="party" value="Democrat" />    Democrat   <br />
+	<input type="radio" name="party" value="Independent" /> Independent <br />
+</td>
+</tr>
+</table>
+
+<!-- radio buttons : news -->
+<table>
+<tr>
+<td> <p style="padding-bottom: 40px; "> Most watched network: </p></td>
+<td>
+	<!-- hidden: this is here in case that user does not select an option -->
+	<input type="hidden" name="tv" value="" />
+    <input type="radio" name="tv" value="FOX News" /> FOX News <br />
+    <input type="radio" name="tv" value="CNN" />      CNN <br />
+	<input type="radio" name="tv" value="MSNBC" />    MSNBC <br />
+</td>
+</tr>
+</table> 
+
+<!-- textbox: Comments -->
+<table>
+<tr>
+<td>
+<p style="text-align:left;">Questions or comments? Please provide them below: <br /> </p>  
+</td>
+</tr>
+<tr>
+<td>
+<textarea name="user_comments" rows="4" cols="50" > 
+
+</textarea>
+</td>
+</tr>
+</table>
+
+<!-- submit buttons -->
+<div style="text-align: center; padding-top: 8px; padding-right: 10px;">
+<input type="submit" value="Submit" />
+<input type="reset" value="Clear" />
+</div>
+
+</form> <!-- close form -->
+
+<!-- seperator (below form) -->
+<div align="center" style="padding-bottom: 6px;">
+<img src="../images/break.png" class="centeredImage" width="318" height="11" 
+     alt="separator" title="separator" align="middle" border="0"/>
+</div>
+
+<br />
+<!-- back button -->
+	<a href="homework_page.html">
+		<img src="http://www.techadvisory.org/wp-content/uploads/2010/11/back-button.jpg" style="float: left; padding-top: 8px; padding-right:0px"
+		     width="50" height="50" alt="back to homework page" title="back to homework page" border="0"/>
+	</a> 
+
+<!-- validation -->
+
+<p style="text-align:center; padding-right: 40px;">
+			 
+ <a href="http://validator.w3.org/check?uri=referer"><img
+        src="http://www.w3.org/Icons/valid-xhtml10" border="0"
+        alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
+			 
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+
+<pre> </pre>
+</div>
+</body>
+</html>

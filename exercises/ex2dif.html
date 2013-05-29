@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<html>
+<header>
+<title> Exercise 1 </title>
+
+
+<script type="text/javascript">
+/* <![CDATA[ */       
+
+var number = new Array();
+for(count = 0; count < 4; count++)
+   number[count] = parseInt(prompt("Enter a number: ", ""));
+ 
+var lessThan = "";
+var eqOrMore = "";
+var product = 1;
+for(count = 0; count < 4; count++)
+{
+    product *= number[count];
+    if(number[count] < 6)
+	   lessThan += number[count] + " ";
+	else
+	    eqOrMore += number[count] + " ";
+}
+alert("Numbers less than 6: " +lessThan + "\n Numbers equal or greater than 6: " + eqOrMore);
+alert("Product: " +product);
+
+/*]]>*/ 
+
+
+</script>
+
+</header>
+
+<body>
+
+
+</body>
+
+</html>

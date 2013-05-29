@@ -1,0 +1,93 @@
+/*Victor Malchikov - vCSS.css */
+
+
+/* body */
+body 
+{
+  background-image:url(../images/simple_background.jpg);
+  background-color: black;
+  text-align:center; /* Hack for IE/Win */ 
+  background-repeat:no-repeat;
+}
+
+#content
+ {
+	width:800px;
+	margin:0px auto;
+	text-align:left;
+	padding:10px;
+	border:0px;
+	background-color:white;
+	
+}
+
+/*fancy divider image */
+.dividerImage
+{
+   background-image:url(../images/break.png);
+   background-repeat:no-repeat;
+   height: 11px;  /*force div tag to open if there is no text*/
+   background-position:center;
+   margin-bottom: 2px; /* adds/removes spaces between elements on page */
+}
+
+/*image control */
+.centeredImage
+{
+  margin-top: 10px;
+}
+
+.bottomImage
+{
+  margin-top: 10px;
+}
+
+.leftImage
+{
+  padding-left: 0px;
+  margin: 10px 10px 0px 0px;  /* top, right, bottom, left */
+  float: left;
+  display:block;
+}
+
+.rightImage
+{
+  padding-left: 0px;
+  margin: 10px 0px 0px 7px;  /* top, right, bottom, left */
+  float: right;
+  display:block;
+}
+
+/* <p> tag */
+p
+{
+  text-align: center;
+  padding: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  word-wrap: break-word; /*use this to have text wrap around */
+}
+
+p.header 
+{
+	text-align:center;
+	font-size:14pt; 
+	font-weight:normal; 
+	font-variant:normal;
+}
+
+
+p.sectionHeader /* use with .dividerImage */
+{
+	text-align:center;
+	font-size:14pt; 
+	font-weight: bold; 
+	font-variant:normal;
+	font-family: Sans-serif;
+	margin-top:0px; /* adds/removes space between elements on the page */
+	margin-bottom: 3px;
+}
+
+/*CSS NOTES:
+Margin is on the outside of block elements while padding is on the inside.
+*/
